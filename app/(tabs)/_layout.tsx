@@ -34,6 +34,13 @@ export default function TabsLayout() {
           tabBarLabel: 'Timeline',
         }}
       />
+      <Tabs.Screen
+        name="insights"
+        options={{
+          title: 'Insights',
+          tabBarLabel: 'Insights',
+        }}
+      />
     </Tabs>
   );
 }
