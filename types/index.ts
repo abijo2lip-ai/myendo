@@ -11,6 +11,7 @@ export interface User {
   id: string;
   email: string;
   diagnosis_status: DiagnosisStatus;
+  symptom_checklist: string[];
   cycle_tracking_enabled: boolean;
   last_period_start_date: string | null; // ISO date
   avg_cycle_length_days: number;
