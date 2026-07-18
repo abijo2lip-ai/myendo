@@ -41,6 +41,13 @@ export default function TabsLayout() {
           tabBarLabel: 'Insights',
         }}
       />
+      <Tabs.Screen
+        name="export"
+        options={{
+          title: 'Export',
+          tabBarLabel: 'Export',
+        }}
+      />
     </Tabs>
   );
 }
