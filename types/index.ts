@@ -26,6 +26,7 @@ export type CyclePhase = 'menstrual' | 'follicular' | 'ovulation' | 'luteal';
 export type MoodScore = 1 | 2 | 3 | 4 | 5;
 export type SleepScore = 1 | 2 | 3 | 4 | 5;
 export type StressScore = 1 | 2 | 3 | 4 | 5;
+export type EnergyScore = 1 | 2 | 3 | 4 | 5;
 
 export interface PainRegion {
   region: string;
@@ -41,6 +42,7 @@ export interface SymptomLog {
   mood_score: MoodScore;
   sleep_score: SleepScore;
   stress_score: StressScore;
+  energy_score: EnergyScore | null;
   cycle_day: number;
   cycle_phase: CyclePhase;
   note: string | null;
