@@ -27,6 +27,13 @@ export default function TabsLayout() {
           tabBarLabel: 'Food',
         }}
       />
+      <Tabs.Screen
+        name="timeline"
+        options={{
+          title: 'Timeline',
+          tabBarLabel: 'Timeline',
+        }}
+      />
     </Tabs>
   );
 }
