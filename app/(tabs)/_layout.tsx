@@ -20,6 +20,13 @@ export default function TabsLayout() {
           tabBarLabel: 'Today',
         }}
       />
+      <Tabs.Screen
+        name="food"
+        options={{
+          title: 'Food',
+          tabBarLabel: 'Food',
+        }}
+      />
     </Tabs>
   );
 }

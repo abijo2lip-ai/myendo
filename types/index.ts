@@ -61,6 +61,7 @@ export interface FoodLog {
   photo_url: string | null;
   food_tags: string[];
   post_meal_feeling: PostMealFeeling | null;
+  post_meal_symptoms: string[];
   created_at: string;
 }
 
