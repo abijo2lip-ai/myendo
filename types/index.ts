@@ -1,12 +1,8 @@
 // Flointra — TypeScript types matching the database schema
 // IMPORTANT: No calories, macros, weight, BMI, or "goal" fields anywhere.
-
 // ─── User & Profile ───────────────────────────────────────────────
-
 export type DiagnosisStatus = 'diagnosed' | 'suspected' | 'in_process';
-
 export type SubscriptionTier = 'free' | 'premium';
-
 export interface User {
   id: string;
   email: string;
@@ -16,23 +12,21 @@ export interface User {
   last_period_start_date: string | null; // ISO date
   avg_cycle_length_days: number;
   subscription_tier: SubscriptionTier;
+  reminder_enabled: boolean;
+  reminder_time: string; // TIME e.g. '20:00'
+  post_meal_nudge_enabled: boolean;
   created_at: string; // ISO timestamptz
 }
-
 // ─── Symptom Logging ──────────────────────────────────────────────
-
 export type CyclePhase = 'menstrual' | 'follicular' | 'ovulation' | 'luteal';
-
 export type MoodScore = 1 | 2 | 3 | 4 | 5;
 export type SleepScore = 1 | 2 | 3 | 4 | 5;
 export type StressScore = 1 | 2 | 3 | 4 | 5;
 export type EnergyScore = 1 | 2 | 3 | 4 | 5;
-
 export interface PainRegion {
   region: string;
   intensity: number; // 1–10
 }
-
 export interface SymptomLog {
   id: string;
   user_id: string;
@@ -48,11 +42,8 @@ export interface SymptomLog {
   note: string | null;
   created_at: string;
 }
-
 // ─── Food Logging ─────────────────────────────────────────────────
-
 export type PostMealFeeling = 'better' | 'same' | 'worse';
-
 export interface FoodLog {
   id: string;
   user_id: string;
@@ -64,9 +55,7 @@ export interface FoodLog {
   post_meal_symptoms: string[];
   created_at: string;
 }
-
 // ─── Pattern Insights ─────────────────────────────────────────────
-
 export interface PatternInsight {
   id: string;
   user_id: string;
@@ -78,9 +67,7 @@ export interface PatternInsight {
   sample_size: number;
   insight_text: string;
 }
-
 // ─── Auth ─────────────────────────────────────────────────────────
-
 export interface AuthState {
   session: import('@supabase/supabase-js').Session | null;
   user: import('@supabase/supabase-js').User | null;
