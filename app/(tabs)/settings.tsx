@@ -175,7 +175,7 @@ export default function SettingsScreen() {
       const { buildPdfHtml, buildCsv } = await import('@/lib/export-pdf');
       const { printToFileAsync } = await import('expo-print');
       const { shareAsync } = await import('expo-sharing');
-      const { documentDirectory } = await import('expo-file-system');
+      const { cacheDirectory } = await import('expo-file-system/legacy');
 
       const reportData = {
         dateRange: {
@@ -198,8 +198,8 @@ export default function SettingsScreen() {
       });
 
       const csvContent = buildCsv(reportData);
-      const csvUri = documentDirectory + 'flointra-export.csv';
-      const { writeAsStringAsync } = await import('expo-file-system');
+      const csvUri = cacheDirectory + 'flointra-export.csv';
+      const { writeAsStringAsync } = await import('expo-file-system/legacy');
       await writeAsStringAsync(csvUri, csvContent);
 
       await shareAsync(pdfUri.uri, {
