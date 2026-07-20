@@ -1,4 +1,4 @@
-// Flointra — Settings & Privacy Screen
+// MyEndo — Settings & Privacy Screen
 // CONSTRAINT: NO calorie, macro, weight, BMI, diet, or goal language anywhere.
 
 import { useState, useEffect } from 'react';
@@ -204,7 +204,7 @@ export default function SettingsScreen() {
 
       await shareAsync(pdfUri.uri, {
         mimeType: 'application/pdf',
-        dialogTitle: 'Export your Flointra data',
+        dialogTitle: 'Export your MyEndo data',
       });
 
       Alert.alert(
@@ -615,9 +615,9 @@ export default function SettingsScreen() {
         <SectionHeader title="About" />
 
         <View style={styles.aboutCard}>
-          <Text style={styles.aboutTitle}>What is Flointra?</Text>
+          <Text style={styles.aboutTitle}>What is MyEndo?</Text>
           <Text style={styles.aboutText}>
-            Flointra is your compassionate companion for understanding pelvic
+            MyEndo is your compassionate companion for understanding pelvic
             pain patterns. We help you track symptoms, identify personal
             triggers, and prepare for healthcare appointments {'\u2014'} so you can
             advocate for yourself with confidence.
@@ -628,7 +628,7 @@ export default function SettingsScreen() {
               Our no-calorie-counting pledge
             </Text>
             <Text style={styles.pledgeText}>
-              Flointra will never ask you to count calories, track macros,
+              MyEndo will never ask you to count calories, track macros,
               log your weight, or set weight goals. Food tracking here is
               about finding your patterns {'\u2014'} not monitoring your intake. Your
               relationship with food is personal, and we honor that.
@@ -638,7 +638,7 @@ export default function SettingsScreen() {
           <View style={styles.disclaimerCard}>
             <Text style={styles.disclaimerTitle}>Medical disclaimer</Text>
             <Text style={styles.disclaimerText}>
-              Flointra is a self-tracking tool designed to support {'\u2014'} not
+              MyEndo is a self-tracking tool designed to support {'\u2014'} not
               replace {'\u2014'} professional medical care. It does not provide
               medical diagnoses, treatment recommendations, or clinical
               advice. Always consult your healthcare provider about any

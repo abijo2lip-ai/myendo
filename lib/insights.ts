@@ -1,4 +1,4 @@
-// Flointra — Pattern Insights Engine
+// MyEndo — Pattern Insights Engine
 // Rule-based correlation detection between food tags, symptoms, and cycle phases.
 // CONSTRAINT: NO calorie, macro, weight, BMI, diet, or goal language anywhere.
 

@@ -768,7 +768,7 @@ export default function FoodDiaryScreen() {
 
         {/* Disclaimer */}
         <Text style={styles.disclaimer}>
-          ⚕️ Flointra helps you track what you eat to find your patterns. This
+          ⚕️ MyEndo helps you track what you eat to find your patterns. This
           is not a medical diagnosis — always discuss your findings with your
           healthcare provider.
         </Text>
