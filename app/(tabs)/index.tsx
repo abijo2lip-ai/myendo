@@ -668,7 +668,7 @@ export default function DailyLogScreen() {
 
         {/* Disclaimer */}
         <Text style={styles.disclaimer}>
-          ⚕️ Flointra is a tracking tool, not a medical diagnosis. Always
+          ⚕️ MyEndo is a tracking tool, not a medical diagnosis. Always
           discuss your findings with your healthcare provider.
         </Text>
 

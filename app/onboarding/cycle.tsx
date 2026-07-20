@@ -205,7 +205,7 @@ export default function CycleScreen() {
         <Text style={styles.stepIndicator}>Step 3 of 3</Text>
 
         <Text style={styles.disclaimer}>
-          ⚕️ Flointra is a tracking tool, not a medical diagnosis. Always discuss
+          ⚕️ MyEndo is a tracking tool, not a medical diagnosis. Always discuss
           your findings with your healthcare provider.
         </Text>
       </ScrollView>

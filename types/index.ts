@@ -1,4 +1,4 @@
-// Flointra — TypeScript types matching the database schema
+// MyEndo — TypeScript types matching the database schema
 // IMPORTANT: No calories, macros, weight, BMI, or "goal" fields anywhere.
 // ─── User & Profile ───────────────────────────────────────────────
 export type DiagnosisStatus = 'diagnosed' | 'suspected' | 'in_process';

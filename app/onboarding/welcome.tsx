@@ -9,7 +9,7 @@ export default function WelcomeScreen() {
         {/* Hero area */}
         <View style={styles.hero}>
           <Text style={styles.icon}>🌿</Text>
-          <Text style={styles.appName}>Flointra</Text>
+          <Text style={styles.appName}>MyEndo</Text>
           <Text style={styles.tagline}>
             Understand your body.{'\n'}Advocate for your health.
           </Text>
